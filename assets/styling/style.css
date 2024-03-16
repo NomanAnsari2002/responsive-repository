@@ -20,14 +20,35 @@ html {
 *::after {
     box-sizing: inherit;
 }
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #ddc69e;
+    border: 2px solid brown;
+}
+header a{
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--color1);
+}
+.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #DBE5DE;
+    background-color: #baf0ca;
     padding: 0;
     margin: 0;
 }
-
+.featured{
+    max-height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: 0 +140px;
+}
 section {
     max-width: 1200px;
     margin: 0 auto;
@@ -113,4 +134,14 @@ figcaption a {
 .color8 a:hover {
     border-color: var(--color8);
     color: var(--color8);
+}.container2{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    border: 4px solid red;
+    background-color: #bb3e03;
+}
+div img{
+    padding: 10px;
+    margin-left: 50px;
 }
